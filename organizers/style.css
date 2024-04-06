@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(30, 0, 63);
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.124);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nav_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+
+}
+
+.home_logo {
+    left: 4dvh;
+    cursor: pointer;
+}
+
+.nav_text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+}
+
+.navbar_text {
+    color: white;
+    font-size: 18px;
+    /* font-style: normal; */
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Unique for pages start */
+/* main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.s1 {
+    margin: 20px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    display: flex;
+    /* display: block; */
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s4 {
+    cursor: none;
+    display: inline-block;
+    /* display: block; */
+    /* display: flex; */
+    /* display: inline-table; */
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+}
+
+.s2 {
+    cursor: none;
+    display: inline-block; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.dp {
+    height: 24dvh;
+    border-radius: 900000px;
+    border: none;
+}
+
+.s3 {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.name {
+    font-size: 20px;
+    margin: 8px;
+}
+
+.pos {
+    font-size: 10px;
+    margin: 4px;
+    font-weight: bold;
+}
+
+/* Unique for pages end */
+
+footer {
+    list-style-type: none;
+    margin: 20px;
+    padding: 6px;
+    background-color: rgba(255, 255, 255, 0.097);
+    border-radius: 10px;
+    cursor: none;
+}
+
+.copy_text {
+    display: flex;
+    color: white;
+    justify-content: right;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer_items {
+    font-size: 10px;
+    margin-right: 28px;
+    margin-left: 8px;
+}
+
+.github_icon {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 960px) {
+    html {
+        background-color: rgb(13, 53, 65);
+    }
+    body {
+        background-color: rgba(255, 255, 255, 0.124);
+        margin: 8px;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .nav_items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 8px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 8px;
+        padding: 4px;
+
+    }
+
+    .home_logo {
+        cursor: pointer;
+        height: 2dvh;
+    }
+
+    .nav_text {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 12px;
+    }
+
+    .navbar_text {
+        color: white;
+        font-size: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+
+    /* Unique for pages start */
+
+    .s1 {
+        margin: 8px;
+        padding: 6px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        display: block;
+        justify-content: center;
+    }
+
+    .s4 {
+        cursor: none;
+        display: block;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.076);
+        border-radius: 10px;
+    }
+
+    .s2 {
+        cursor: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dp {
+        height: 16dvh;
+        border-radius: 90000px;
+        border: none;
+    }
+
+    
+
+    .name {
+        font-size: 2dvh;
+        margin: 4px;
+    }
+
+    .pos {
+        font-size: 2dvw;
+        margin: 4px;
+        font-weight: bold;
+    } 
+
+    /* Unique for pages end */
+
+
+    footer {
+        list-style-type: none;
+        margin: 8px;
+        padding: 6px;
+        background-color: rgba(255, 255, 255, 0.097);
+        border-radius: 10px;
+        cursor: none;
+    }
+
+    .footer_items {
+        font-size: 8px;
+        margin-right: 8px;
+        margin-left: 4px;
+    }
+
+
+}
