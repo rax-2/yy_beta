@@ -178,7 +178,10 @@ footer {
         margin-left:8px;
 
     }
-
+    .abacus_logo{
+        cursor: pointer;
+        height: 2dvh;
+    }
     .nav_text {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin-left: 12px;

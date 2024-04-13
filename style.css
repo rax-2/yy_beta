@@ -200,7 +200,11 @@ footer {
         cursor: pointer;
         height: 2dvh;
         margin-left:8px;
+    }
 
+    .abacus_logo{
+        cursor: pointer;
+        height: 2dvh;
     }
 
     .nav_text {
