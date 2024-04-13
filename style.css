@@ -30,8 +30,9 @@ body {
 }
 
 .home_logo {
-    left: 4dvh;
+    /* left: 4dvh; */
     cursor: pointer;
+    margin-left: 18px;
 }
 
 .nav_text {
@@ -198,6 +199,8 @@ footer {
         /* left: 2dvw; */
         cursor: pointer;
         height: 2dvh;
+        margin-left:8px;
+
     }
 
     .nav_text {

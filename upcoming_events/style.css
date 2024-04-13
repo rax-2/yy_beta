@@ -28,6 +28,8 @@ body {
 .home_logo {
     left: 4dvh;
     cursor: pointer;
+    margin-left: 18px;
+
 }
 
 .nav_text {
@@ -115,7 +117,7 @@ footer {
 
 .github_icon {
     margin-right: 20px;
-    
+
 }
 
 
@@ -128,6 +130,7 @@ footer {
     html {
         background-color: rgb(72, 8, 8);
     }
+
     body {
         background-color: rgba(255, 255, 255, 0.124);
         margin: 8px;
@@ -150,6 +153,8 @@ footer {
     .home_logo {
         cursor: pointer;
         height: 2dvh;
+        margin-left: 8px;
+
     }
 
     .nav_text {
@@ -172,7 +177,7 @@ footer {
         padding: 8px;
         background-color: rgba(255, 255, 255, 0.097);
         border-radius: 10px;
-        display:contents;
+        display: contents;
         align-items: center;
         justify-content: center;
     }
@@ -193,24 +198,28 @@ footer {
         color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
     .event_name {
         margin-bottom: 2dvh;
         font-weight: bold;
         font-size: 4dvw;
     }
+
     .event_description {
         margin: 4dvw;
         font-size: 2dvw;
     }
+
     .event_date {
         font-weight: bolder;
         display: flex;
         position: sticky;
         font-size: 8px;
     }
-.event_section{
-    margin-bottom: 30px;
-}
+
+    .event_section {
+        margin-bottom: 30px;
+    }
 
     /* Unique for pages end */
 
