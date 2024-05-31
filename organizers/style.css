@@ -13,7 +13,9 @@ body {
     padding: 10px;
     border-radius: 10px;
 }
-
+a{
+    text-decoration: none;
+}
 .nav_items {
     display: flex;
     justify-content: center;
