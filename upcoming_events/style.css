@@ -245,11 +245,11 @@ footer {
 
     .event_section {
         margin-bottom: 30px;
-        font-size: 8px;
     }
 
     .reg_btn {
         padding: 4px;
+        font-size: 8px;
     }
 
     /* Unique for pages end */
