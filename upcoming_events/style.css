@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 html {
     background-color: rgb(30, 0, 63);
 }
@@ -83,11 +87,25 @@ body {
     margin: 4dvh;
     font-size: 2dvh;
 }
-
+.btn_container{
+    display: flex;
+    justify-content: space-between;
+}
 .event_date {
     font-weight: bolder;
-    display: flex;
+    display: inline;
     position: sticky;
+}
+
+.reg_btn{
+    font-weight: bolder;
+    /* display: flex; */
+    display: inline;
+    /* position: sticky; */
+    padding: 10px;
+    background-color: #ffffff36;
+    border-radius: 10px;
+    color: white;
 }
 
 /* Unique for pages end */
