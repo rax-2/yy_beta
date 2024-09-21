@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -87,17 +87,20 @@ body {
     margin: 4dvh;
     font-size: 2dvh;
 }
-.btn_container{
+
+.btn_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
 .event_date {
     font-weight: bolder;
     display: inline;
     position: sticky;
 }
 
-.reg_btn{
+.reg_btn {
     font-weight: bolder;
     /* display: flex; */
     display: inline;
@@ -174,10 +177,12 @@ footer {
         margin-left: 8px;
 
     }
-    .abacus_logo{
+
+    .abacus_logo {
         cursor: pointer;
         height: 2dvh;
     }
+
     .nav_text {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         margin-left: 12px;
@@ -240,6 +245,11 @@ footer {
 
     .event_section {
         margin-bottom: 30px;
+        font-size: 8px;
+    }
+
+    .reg_btn {
+        padding: 4px;
     }
 
     /* Unique for pages end */
