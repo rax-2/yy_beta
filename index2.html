@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YantraYodha AIEM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./site_files/favicon.ico" type="image/x-icon">
+
+
+
+    <!-- alert style -->
+    <style>
+        .alert {
+            padding: 20px;
+            background-color: rgb(255, 0, 0);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        @media only screen and (max-width: 960px) {
+            .alert {
+                margin: 8px;
+                padding: 8px;
+            }
+        }
+    </style>
+
+    <script>
+        const googleAppsScriptURL = 'https://script.google.com/macros/s/AKfycbw__R_BDgzpCiYG-VYk7S56nmD0T7ua5HB1G_b2OfsGM3BJFiSiUeoUOny7CjeVfGYcaA/exec';
+
+        async function fetchData() {
+            try {
+                const response = await fetch(googleAppsScriptURL);
+                if (!response.ok) {
+                    throw new Error('HTTP error! Status: ${ response.status } ');
+                }
+
+                const data = await response.json(); // Assuming the Apps Script returns JSON
+                document.getElementById('grp_mem_count').innerText = JSON.stringify(data, null, 2)+" Community Members";
+                console.log(JSON.stringify(data, null, 2))
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                document.getElementById('grp_mem_count').innerText = 'Error loading data.';
+            }
+        }
+
+        // Call the fetch function on page load
+        fetchData();
+    </script>
+</head>
+
+<body>
+
+    <div class="site_body">
+
+        <header>
+            <nav>
+                <ul class="nav_items">
+                    <a class="home_logo" href="./index.html">
+                        <img class="home_logo" src="./site_files/transparent YY logo.png" height="40px"
+                            alt="YantraYodha">
+                    </a>
+                    <li class="nav_text"><a class="navbar_text" href="./upcoming_events/upcomeing_events.html">Upcoming
+                            Events</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="./past_events/past_events.html">Past Events</a>
+                    </li>
+
+                    <li class="nav_text"><a class="navbar_text" href="./organizers/organizers.html">Organizers</a></li>
+
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank">AIEM</a>
+                    </li>
+                    <li class="nav_text"><a class="navbar_text" href="https://www.abacusinstitute.org/"
+                            target="_blank"><img class="abacus_logo" src="./site_files/aiem.png" height="40px"
+                                alt="Abacus institute"></a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <!-- alert message -->
+            <!--             <div class="alert ">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Alert!! for Heat Wave:</strong> Drink plenty of water throughout the day to stay hydrated and
+                Stay indoors during peak heat hours.
+            </div> -->
+
+
+            <div class="site_head  ">
+
+                <div class="intro">
+                    <h1 class="home_head_text">
+                        YantraYodha Club - Abacus Institute of Engineering and Management
+                    </h1>
+                    <p class="group_member_amount" id="grp_mem_count">Calculating Community Members...</p>
+                </div>
+            </div>
+
+            <div class="join_us">
+                <a class="join_us_btn" target="_blank" href="https://yyaiem.github.io/member_registration/">
+                    Join Us </a>
+            </div>
+
+            <div class="about_us">
+                <h1 class="about_head">About</h1>
+                <p class="about_text">Welcome to YantraYodha, the hardware project club at Abacus Institute
+                    of Engineering and Management! Our club is dedicated to exploring the realms of electronics,
+                    programming, and robotics while nurturing a community of learners and innovators.
+                    <br><br>
+                    At YantraYodha, we believe in the power of knowledge sharing. Our senior students take on the role
+                    of mentors, guiding juniors through the intricacies of programming languages, microcontrollers,
+                    electronic sensors, IoT (Internet of Things), Linux, web development, and more. Through interactive
+                    sessions, workshops, and hands-on projects, we aim to equip our members with the skills and
+                    confidence needed to thrive in today's technology-driven world.
+                    <br><br>
+                    One of the cornerstones of YantraYodha is our commitment to fostering innovation and creativity. We
+                    organize various project competitions where students can showcase their ingenuity and
+                    problem-solving abilities. These competitions not only provide a platform for students to
+                    demonstrate their technical prowess but also encourage collaboration and teamwork.
+                    <br><br>
+                    In addition to competitions, we regularly host hands-on workshops where members can dive deep into
+                    specific technologies or concepts. Whether it's learning to build a robot from scratch or mastering
+                    the intricacies of IoT development, our workshops offer practical, real-world experience that
+                    complements classroom learning.
+                    <br><br>
+                    Furthermore, YantraYodha organizes seminars and guest lectures featuring experts from industry and
+                    academia. These events expose our members to the latest advancements and trends in technology,
+                    inspiring them to push the boundaries of what's possible.
+                    <br><br>
+                    But YantraYodha is more than just a club—it's a community. We strive to create an inclusive
+                    environment where every member feels valued and supported in their learning journey. Through
+                    collaboration, mentorship, and a shared passion for technology, we aim to empower the next
+                    generation of engineers and innovators.
+                    <br><br>
+                    So whether you're a seasoned pro or a newcomer to the world of hardware and robotics, YantraYodha
+                    welcomes you to join us on this exciting adventure. Together, let's explore, innovate, and make a
+                    difference in the world through technology!
+                </p>
+            </div>
+
+            <div class="social_links">
+
+                <a class="social_icons" href="mailto:yantrayodha+faq_page@gmail.com" target="_blank">
+                    <img class="social_icons" src="./index_page_files/mail.png" alt="Mail to yantrayodha">
+                </a>
+
+            </div>
+        </main>
+        <footer>
+            <div class="copy_text">
+                <p class="copyright foot_txt footer_items">&COPY; 2024 Pinaka</p>
+                <!-- <div class="powerdby_text"></div> -->
+                <p class="powerd_by foot_txt footer_items">Powerd by GitHub
+                </p>
+
+                <img class="github_icon foot_txt" src="./site_files/github.png" alt="GitHub Logo" height="20px">
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
